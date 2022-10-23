@@ -1,0 +1,405 @@
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px)  {
+    .nav_menu .nav_list {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -300px;
+        top: 0;
+        height: 100vh;
+        background-color: white;
+        width: 200px;
+        padding: 100px 5px;
+        box-shadow: 0 10px 10px #ddd;
+        transition: 0.5s;
+
+    }
+    .nav_menu .nav_list.active {
+        right: 0;
+    }
+
+    .nav_menu .nav_list > li > a {
+        display: block;
+        padding: 10px 0 0 0 0;
+        margin-bottom: 25px;
+    }
+    
+    .nav_menu .nav_list > li > a.active::after ,
+    .nav_menu .nav_list > li > a:hover::after {width: 13%;}
+
+    #manu-mobile {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    #manu-mobile #bar-icone {
+        padding: 5px 10px ;
+        font-size: 1.2rem;
+    }
+
+    #close {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        width: 30px;
+        line-height: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        background-color: green;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+
+    /* mein photo */
+    .landing .landing-img {
+        background: url(../img/hero4.png) right -10px top 25% / cover;
+        height: 70vh;
+    }
+
+    .landing .landing-img .landing-content {
+        padding: 0 15px;
+    }
+
+       .landing .landing-img .landing-content p {
+        font-size: 1.5rem;
+           line-height: 2;
+           font-weight: bold;
+           color: rgb(99, 99, 99);
+       }
+       
+       .landing .landing-img .landing-content h1 {
+           font-size: 3.5rem;
+       }
+ 
+       .landing .landing-img .landing-content button {
+        padding: 10px 45px 14px 57px;
+           font-size: 1.5rem;
+       }
+       
+
+       /* Feature Products */
+
+       .feature .fe-list .fe-item {
+        width: 30%;
+    }
+
+       .prod-list {
+        justify-content: center;
+    }
+    
+    .prod-list .prod-item {
+        margin: 20px 20px;
+
+    }
+    
+    .prod-list .prod-item {
+        width: 40%;
+        min-width: none;
+
+    }
+
+
+    /* Repair Services  */
+
+    .banner h2 {
+        font-size: 2rem;
+        line-height: normal;
+        margin: 10px 0;
+    }
+
+    /* Crazy Deals */
+
+    .sm-banner .banner-content {
+        background-position: top 0px right 0px;
+        min-width: 250px;
+    }
+
+    .sm-banner .banner-content h2 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+
+    /* SEASONAL SALE */
+    .sec-banner .sec-items {
+        justify-content: center;
+        flex-direction: column;
+        min-width: 200px;        
+    }
+
+    .sec-banner .sec-items h2 , 
+    .sec-banner .sec-items h3{
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    /* SIGN UP FOR NEWSLETTERS */
+    .news {
+        display: flex;
+        padding: 80px 50px;
+        justify-content: center;
+    }
+    .news h4 {
+        font-size: 2.4rem;
+        line-height: 1.3;
+    }
+
+    .news p {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+
+    .newsletter .form {
+        flex-direction: row;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    /* footer */
+
+    .footer-content .col {
+        display: flex;
+        flex-direction: column;
+        min-width: 210px;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+        /* mein photo */
+
+        .landing .landing-img .landing-content {
+            padding: 0px 30px;
+
+        }
+        .landing .landing-img {
+            background: url(../img/hero4.png) right -80px top 25% / cover;
+            height: 70vh;
+        }
+    
+           .landing .landing-img .landing-content p {
+            font-size: 1rem;
+           }
+           
+           .landing .landing-img .landing-content h1 {
+               font-size: 2.5rem;
+           }
+     
+           
+
+   /* Crazy Deals */
+    .sm-banner .banner-content {
+        background-position: top 0px right -115px;
+         width: 48%;
+         min-width: 0;
+    }
+
+    .sm-banner .banner-content h2 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+
+        /* SEASONAL SALE */
+        .sec-banner .sec-items {
+            justify-content: center;
+            flex-direction: column;
+            width: 48%;
+            min-width: 0;   
+        }
+    
+        .sec-banner .sec-items h2{
+            font-weight: bolder;
+            font-size: 25px;
+        }
+        .sec-banner .sec-items h3 {
+            font-size: 15px;
+        }
+
+
+    /* SIGN UP FOR NEWSLETTERS */
+    .news {
+        padding: 80px 50px;
+    }
+    .news h4 {
+        font-size: 1.6rem;
+    }
+
+    .news p {
+        font-size: .8rem;
+    }
+
+    .newsletter .form {
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+        /* footer */
+
+        .footer-content .col {
+            display: flex;
+            flex-direction: column;
+            min-width: 210px;
+            margin-top: 20px;
+        }
+    
+        .footer-content {
+            justify-content: flex-start;
+        }
+        .footer-content .content-four .img-app {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .footer-content .content-four .img-app img {
+            margin: 0 0 5px 0;
+
+        }
+}
+@media only screen and (max-width: 585px) {
+     /* mein photo */
+     .landing .landing-img {
+        background: url(../img/hero4.png) right -120px top 25% / cover;
+        height: 70vh;
+    }
+
+    .landing .landing-img .landing-content {
+        padding: 0 15px;
+    }
+
+       .landing .landing-img .landing-content p {
+        font-size: 1rem;
+           line-height: 2;
+           font-weight: bold;
+           color: rgb(99, 99, 99);
+       }
+       
+       .landing .landing-img .landing-content h1 {
+           font-size: 2rem;
+       }
+ 
+
+       /* Feature Products */
+
+       .feature .fe-list .fe-item {
+        width: 80%;
+    }
+
+    
+    .prod-list .prod-item {
+        width: 80%;
+        min-width: none;
+
+    }
+        /* Repair Services  */
+
+        .banner h2 {
+            font-size: 2rem;
+            line-height: normal;
+            margin: 10px 0;
+        }
+    
+    
+        /* Crazy Deals */
+
+        .sm-banner .banner-content {
+            background-position: top 0px right 0px;
+            min-width: 100%;
+        }
+    
+        .sm-banner .banner-content h2 {
+            font-size: 2rem;
+            line-height: normal;
+        }
+    
+            /* SEASONAL SALE */
+        .sec-banner .sec-items {
+            justify-content: center;
+            flex-direction: column;
+            min-width: 100%;        
+        }
+
+        .sec-banner .sec-items h2 , 
+        .sec-banner .sec-items h3{
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        .sec-banner .sec-items h3{
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+
+
+   
+    /* SIGN UP FOR NEWSLETTERS */
+    .news {
+        display: flex;
+        padding: 80px 20px;
+        justify-content: center;
+    }
+    .news h4 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+    }
+
+    .news p {
+        font-size: .9rem;
+        line-height: 1.3;
+    }
+
+    .newsletter .form {
+        flex-direction: column;
+        min-width: 100%;
+        margin-top: 10px;
+    }
+
+
+    /* footer */
+
+    .footer-content .col {
+        display: flex;
+        flex-direction: column;
+        min-width: 210px;
+        margin-top: 20px;
+    }
+
+    .footer-content {
+        justify-content: flex-start;
+    }
+
+    .footer-content .content-four .img-app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content .content-four .img-app img {
+        margin: 5px 0 0 0;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
